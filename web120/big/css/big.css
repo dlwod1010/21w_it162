@@ -1,0 +1,152 @@
+/* BIG WEB120 */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  background-color: #d2b88f;
+}
+
+p.indent {
+  text-indent: 5%;
+}
+
+p.date {
+  text-align: end;
+}
+
+em {
+  font-size: large;
+  color: #283c63;
+}
+
+a {
+  text-decoration-line: none;
+}
+
+.pageID {
+  text-align: center;
+}
+
+img.gallery {
+  max-width: 100%;
+}
+
+ul {
+  margin: auto 40px;
+  list-style-type: square;
+}
+
+div.wrapper,
+footer {
+  width: 100%;
+  margin: auto;
+  background-color: #fff;
+  overflow: auto;
+}
+
+/* header h1 {
+  text-align: right;
+} */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  padding: 0.5em;
+}
+
+h1,
+h3 {
+  text-align: center;
+}
+
+p {
+  margin: 1em 0.8em;
+}
+div.dot {
+  text-align: center;
+}
+
+div.dot iframe {
+  border: 0;
+  overflow: no;
+  height: 300px;
+}
+
+/* Star here - Embed Responsively Rules! */
+
+div.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+div.embed-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* End - Embed Responsively Rules! */
+
+/* hide agenda-view  */
+
+div.embed-container.agenda-view {
+  display: none;
+}
+
+footer {
+  text-align: center;
+  text-transform: uppercase;
+  clear: both;
+}
+
+footer p {
+  padding: em;
+}
+
+footer a {
+  color: red;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: white;
+  background-color: black;
+}
+
+/* phone view*/
+
+@media all and (min-width: 1000px) {
+  div.wrapper {
+    background-color: #dbe2ef;
+  }
+
+  /* Show Agenda View Calendar */
+  div.embed-container.agenda-view {
+    display: block;
+  }
+
+  section {
+    float: left;
+    width: 64%;
+    padding-left: 2.5%;
+  }
+
+  aside {
+    float: right;
+    width: 26%;
+    padding-right: 2.5%;
+  }
+}
