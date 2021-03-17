@@ -1,0 +1,87 @@
+/* @import url("styles.css"); */
+
+h2.headline {
+  padding-top: 15px;
+}
+p.headline {
+  font-size: 20px;;
+}
+section.order-page,
+section.menu-page,
+section.about-page {    
+  background-color: #fff;
+  width: 80%;
+  margin: auto;
+}
+
+.order {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;  
+}
+
+.select-menu {
+  max-width: 23%;
+  padding: 10px;
+}
+
+.select-img {
+  width:100%;
+}
+.select-qtt,
+.select-total {
+  padding:5px;
+}
+
+.select-add-btn,
+.select-remove-btn {
+  margin-left: 5px;
+}
+
+.select-add-btn {
+  background-color: #ba9b64;
+}
+
+.checkout-btn {
+  margin-bottom: 40px;
+  padding: 10px;
+  margin-top: 15px;
+  background-color: cornflowerblue;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.checkout-btn:hover {
+  opacity: 0.7;
+}
+
+
+.intro-banner img,
+.intro-detail img {
+  width: 33%;
+  display: inline;
+}
+
+.intro-detail p {
+  font-size: 20px;
+}
+
+
+/* Smartphones ----------- */
+@media all and (max-device-width: 767px) {
+
+  .order {        
+      display: flex;
+      flex-direction: column;
+      margin: auto;  
+  }
+
+  .select-menu {
+      max-width: 100%;
+      padding: 5px;
+  }
+
+  
+}
