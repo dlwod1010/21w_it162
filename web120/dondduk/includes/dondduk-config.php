@@ -51,13 +51,14 @@ switch(THIS_PAGE){
 }
 
 //$nav2['index.php'] = "Welcome";
+$deliveryLink = "https://baemin.me/3MWlmXszl";
+$nav2[$deliveryLink] = "delivery";
 $nav2['order.php'] = "online order";
 $nav2['about.php'] = "about Dondduk";
 $nav2['menu.php'] = "menu";
 $nav2['contact.php'] = "contact";
 $mapLink = "https://map.naver.com/v5/entry/place/1539489212?c=14136004.1448371,4494401.7337420,15,0,0,0,dh&placePath=%2Fbooking%3Fentry=plt";
 $nav2[$mapLink] = "reservation";
-
 
 // a function to generate links and keep the hightlight the current page
 function makeLinks($nav, $mapLink)
@@ -66,14 +67,15 @@ function makeLinks($nav, $mapLink)
     foreach($nav as $url => $text) {
 
         $targetValue = '_self';
-        if($url == $mapLink) {
+        if ($url == $mapLink) { 
             $targetValue = '_blank';
         }
 
+        $id = $nav[$url];
         if($url == THIS_PAGE){
-            $myReturn .= "<a class=\"selected\" href=\"$url\" target=\"$targetValue\">$text</a> "; 
+            $myReturn .= "<a id=\"$id\" class=\"selected\" href=\"$url\" target=\"$targetValue\">$text</a> "; 
         }else{
-            $myReturn .= "<a href=\"$url\" target=\"$targetValue\">$text</a>";  
+            $myReturn .= "<a id=\"$id\" href=\"$url\" target=\"$targetValue\">$text</a>";  
         }
 
     }

@@ -4,11 +4,11 @@ h2.headline {
   padding-top: 15px;
 }
 p.headline {
-  font-size: 20px;;
+  font-size: 20px;
 }
 section.order-page,
 section.menu-page,
-section.about-page {    
+section.about-page {
   background-color: #fff;
   width: 80%;
   margin: auto;
@@ -18,7 +18,7 @@ section.about-page {
   width: 80%;
   display: flex;
   flex-wrap: wrap;
-  margin: auto;  
+  margin: auto;
 }
 
 .select-menu {
@@ -27,11 +27,11 @@ section.about-page {
 }
 
 .select-img {
-  width:100%;
+  width: 100%;
 }
 .select-qtt,
 .select-total {
-  padding:5px;
+  padding: 5px;
 }
 
 .select-add-btn,
@@ -57,7 +57,6 @@ section.about-page {
   opacity: 0.7;
 }
 
-
 .intro-banner img,
 .intro-detail img {
   width: 33%;
@@ -68,20 +67,20 @@ section.about-page {
   font-size: 20px;
 }
 
-
 /* Smartphones ----------- */
 @media all and (max-device-width: 767px) {
-
-  .order {        
-      display: flex;
-      flex-direction: column;
-      margin: auto;  
+  .order {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
   }
 
   .select-menu {
-      max-width: 100%;
-      padding: 5px;
+    max-width: 100%;
+    padding: 5px;
   }
 
-  
+  .intro-detail p {
+    font-size: 15px;
+  }
 }

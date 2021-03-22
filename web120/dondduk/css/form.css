@@ -1,78 +1,100 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 .contact-container {
-    display: flex;
-    flex-direction: row;
-    width: 80%;
-    margin:auto;
-    background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  /* width: 85%; */
+  margin: auto;
+  background-color: #fff;
 }
 
 .form-wrapper {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width: 50%;
 }
 
-input[type=text],
-input[type=email],
-textarea {
-    margin:10px 0px; 
-    padding:10px;
-    width: 100%;
-} 
-textarea {
-    height: 200px;
+.contact-feedback {
+  width: 50%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 
-input[type=submit] {
-    padding: 10px;
-    margin-top: 15px;
-    background-color: cornflowerblue;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+input[type="text"],
+input[type="email"],
+textarea {
+  margin: 10px 0px;
+  padding: 10px;
+  width: 100%;
+}
+textarea {
+  height: 200px;
+}
+
+input[type="submit"] {
+  padding: 10px;
+  margin-top: 15px;
+  background-color: cornflowerblue;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .info-wrapper {
-    width: 50%;
-    margin: 5px 20px;
-    padding: 5px;
+  width: 50%;
+  margin: 5px 20px;
+  padding: 5px;
 }
 
 .hours p {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .map {
-    border: solid 1px black;
+  border: solid 1px black;
 }
 
 .map iframe {
-    width: 100%;
+  width: 100%;
 }
 
 /* Smartphones (portrait and landscape) ----------- */
 @media all and (max-device-width: 767px) {
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    background-color: #fff;
+  }
+  .form-wrapper {
+    width: 100%;
+  }
 
-    .contact-container {
-        display: flex;
-        flex-direction: column;        
-        width: 100%;
-        margin-top: 20px;
-        background-color: #fff;
-    }
+  .g-recaptcha {
+    transform: scale(0.77);
+    -webkit-transform: scale(0.77);
+    transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+  }
 
-    .info-wrapper {        
-        width: 100%;
-        margin: auto;
-        padding: 5px;
-    }
+  .contact-feedback {
+    width: 100%;
+  }
 
-    .map {
-        border-style: none;
-    }
-    .map iframe {
-        width: 100%;
-    }
+  .info-wrapper {
+    width: 100%;
+    margin: auto;
+    padding: 5px;
+  }
+
+  .map {
+    border-style: none;
+  }
+
+  .map iframe {
+    width: 100%;
+  }
+}

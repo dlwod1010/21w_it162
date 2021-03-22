@@ -9,20 +9,10 @@ body {
   max-width: 90%;
   background-color: #322c30;
   margin: auto;
-  text-align: center;
 }
 .pageID {
   display: none;
 }
-
-.show {
-  display: block;
-}
-
-.hide {
-  display: none;
-}
-
 header {
   text-align: center;
 }
@@ -39,6 +29,9 @@ a {
   margin-top: 20px;
   text-shadow: 5px 3px 5px #000000;
 }
+.nav {
+  font-size: 1.2em;
+}
 
 .sub-logo {
   color: #d42f26;
@@ -46,10 +39,9 @@ a {
 }
 
 .nav {
-  font-size: 1.6em;
   padding: 30px;
   margin: auto;
-  width: 50%;
+  width: 40%;
   display: flex;
   justify-content: space-between;
 }
@@ -64,14 +56,9 @@ a {
   padding: 3px;
 }
 
-.nav .selected {
-  color: #d42f26;
-}
-
 .insta-link {
   font-size: 1.7em;
 }
-
 section {
   width: 100%;
 }
@@ -84,9 +71,10 @@ section {
   display: flex;
 }
 .banner-info {
-  width: 100%;
   color: #d42f26;
-  font-size: 1.3em;
+  /* max-width: 100%; */
+  /* margin: auto; */
+  font-size: 1.5em;
   text-align: center;
 }
 .banner-image {
@@ -117,17 +105,58 @@ section {
 footer {
   text-align: center;
   padding: 10px;
-  /* clear: both; */
-  color: #fff;
+  clear: both;
+  color: #000000;
 }
 
-/* menu page style */
+/* Desktops and laptops ----------- */
+/* @media all and (min-width: 1280px) {
+  .nav {
+    padding: 30px;
+    margin: auto;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+  }
 
-.menu img {
-  max-width: 100%;
-}
+  .banner-wrapper {
+    padding: 10px 0 10px 0;
+    border: solid #ffff 2px;
+    margin: auto;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .banner-info {
+    color: #fff;
+    max-width: 100%;
+    margin: auto;
+    font-size: 1.5em;
+    text-align: center;
+  }
+  .banner-image {
+    max-width: 100%;
+    margin: auto;
+    width: 400px;
+    height: 300px;
+  }
 
-/* Tablets ----------- */
+  .gallery-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    border: double #ffff 2px;
+    margin: auto;
+  }
+  .banner-wrapper,
+  .gallery-wrapper {
+    margin-bottom: 20px;
+  }
+
+  .gallery img {
+    max-width: 33%;
+  }
+} */
 @media all and (min-device-width: 768px) and (max-device-width: 1279px) {
   .gallery-wrapper {
     text-align: center;
@@ -135,60 +164,83 @@ footer {
   .gallery img {
     max-width: 60%;
   }
-  .nav {
-    font-size: 1.2em;
-    width: 60%;
-  }
 }
 
-/* Smartphones  ----------- */
+/* Smartphones (portrait and landscape) ----------- */
 @media all and (max-device-width: 767px) {
-  .nav {
+  /* .top-nav {
+    position: relative;
+    display: inline-block;
+  }
+  .top-nav i {
+    display: block;
+    color: #fff;
     margin-top: 15px;
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+  .nav {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 110px;
+    z-index: 1;
+  }
+
+  .nav a {
+    color: black;
+    padding: 10px 12px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .top-nav:hover .nav {
+    display: block;
+    margin: auto;
+  } */
+  section {
+  }
+  .nav {
     display: flex;
     flex-direction: column;
-    font-size: 1.4em;
-    padding: unset;
+    font-size: 1.7em;
   }
   .nav .delivery,
   .nav .reservation {
-    background-color: #fff;
+    background-color: cornflowerblue;
     border-radius: 10px;
-    padding: unset;
   }
-
   .insta-link {
-    font-size: 1em;
+    font-size: 1.4em;
   }
 
   .banner-wrapper {
     background-color: #322c30;
     margin: auto;
-    padding: unset;
+    padding: none;
     border-style: none;
+    /* width: 100%; */
     display: flex;
     flex-direction: column;
   }
-
   .banner-info {
     padding: 10px;
     border: solid #fff 0.8px;
     border-radius: 10px;
     color: #fff;
-    /* max-width: 100%; */
-    margin-top: 15px;
+    max-width: 100%;
+    margin: auto;
+    /* font-size: 1.5em; */
     font-size: 1.2em;
   }
-
   .banner-image img {
     display: none;
   }
-
   .gallery-wrapper {
     padding: 5px;
     border: none;
     display: flex;
-    max-width: 80%;
+    max-width: 60%;
     flex-direction: column;
   }
   .banner-wrapper,
@@ -199,11 +251,5 @@ footer {
   .gallery img {
     max-width: 100%;
     margin: auto;
-  }
-
-  footer {
-    padding: unset;
-    text-align: center;
-    color: #fff;
   }
 }

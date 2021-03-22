@@ -42,6 +42,8 @@ div.embed-container iframe {
 }
 
 footer {
+  text-align: center;
+  padding: 10px;
   clear: both;
 }
 
@@ -56,20 +58,14 @@ footer {
 
   section {
     width: 60%;
-    float: left;
-    font-size: 19px;
-  }
-
-  aside {
-    width: 38%;
     float: right;
+    margin: 15px;
     font-size: 19px;
   }
 
   img.desktop {
-    float: left;
-    width: 30%;
-    margin-right: 10px;
+    width: 25%;
+    margin-right: 15px;
     display: inline-block;
   }
 
@@ -88,15 +84,19 @@ footer {
 /* TABLET */
 @media all and (min-width: 737px) and (max-width: 1399px) {
   section {
-    width: 55%;
-    float: left;
-    margin-left: 5px;
+    align-items: center;
+    display: flex;
+    width: 90%;
+  }
+  .introduction-images {
+    width: 100%;
+    margin: auto 10px;
   }
 
-  aside {
-    margin-right: 5px;
-    width: 43%;
-    float: right;
+  .introduction-text {
+    margin: auto 10px;
+    text-align: center;
+    font-size: 19px;
   }
 
   img.tablet {

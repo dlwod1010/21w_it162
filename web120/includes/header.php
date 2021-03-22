@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title><?=$title ?></title>
+<title><?=$title?></title>
 <meta name="viewport" content="width=device-width" />
 <meta name="robots" content="noindex,nofollow" />
 <meta charset="utf-8">
@@ -10,10 +10,11 @@
 <link rel="stylesheet" href="css/nav.css" />
 <link rel="stylesheet" href="css/portal.css" />
 <link rel="stylesheet" href="css/form.css" />
+<link rel="stylesheet" href="css/styles.css" />
 </head>
 
 <body>
-<!-- START WRAPPER -->
+
 <main class="wrapper">
 <header>
   <h1>

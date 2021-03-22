@@ -19,42 +19,45 @@ define('THIS_PAGE',basename($_SERVER['PHP_SELF']));
 //this helps us avoid PHP date errors:
 date_default_timezone_set('America/Los_Angeles');
 
+$siteKey = "6LdMNTsaAAAAAEZ9ro2lqgzg-IS2Ypnh5QUFBOHE";
+$secretKey = "6LdMNTsaAAAAAIAwiibtAUQx7mGIlD8-JMqjHTnQ";
+$server = 'coderjlee.com';
+
+
 $logo_color = ''; //make logo_color an empty string by default
 
 switch(THIS_PAGE){
 
     case 'index.php':
-        $title = "Jiae's WEB120 portal Page";
+        $title = "Home page";
         $logo = 'fa-home';
-        $PageID = 'Welcome';
+        $PageID = 'About Me';
 
     break;
 
-    case 'big.php':
+    case 'big/index.php':
         $title = "Jiae's WEB120 Big page";
         $PageID = 'BIG';
     break;
 
     case 'flowchart.php':
-        $title = "Jiae's WEB120 Flowchart page";
+        $title = "Flowchart page";
         $PageID = 'Flowchart';
     break;    
 
-    case 'final_project.php':
-        $title = "Jiae's WEB120 F/P page";
+    case 'dondduk/index.php':
+        $title = "Final Project";
         $PageID = 'Final project';        
     break;
 
     case 'contactme.php':
-        $title = "Jiae's WEB120 Contact Page";
-        $logo = 'fa-pencil-square-o';
+        $title = "Contact Page";
         $PageID = 'Contact Jiae';
         $logo_color = ' style="color:#0f0"';
     break;
 
     case 'aia.php':
-        $title = "Jiae's Final Project AIA (Client work)";
-        $logo = "fa-universal-access";
+        $title = "AIA Page";
         $logo_color = ' style="color:#00f"';
         $PageID = 'AIA';
     break;
@@ -66,10 +69,10 @@ switch(THIS_PAGE){
 }
 
 $nav1['index.php'] = "Welcome";
-$nav1['big.php'] = "Big";
+$nav1['big/index.php'] = "Big";
 $nav1['aia.php'] = "AIA";
 $nav1['flowchart.php'] = "Flowchart";
-$nav1['final_project.php'] = "Final Project";
+$nav1['dondduk/index.php'] = "Final Project";
 $nav1['contactme.php'] = "Contact Jiae";
 
 

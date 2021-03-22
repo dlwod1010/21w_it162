@@ -33,3 +33,16 @@
             </div>
         </div>
     </header>
+    <script>
+        const userAgent = navigator.userAgent;
+        const isMobileAgent = userAgent.search(/iPhone/) > -1 || userAgent.search(/Android/) > -1;
+        const deliveryElement = document.getElementById('delivery');
+        const onlineOrderElement = document.getElementById('online order');
+        if (isMobileAgent) {
+            onlineOrderElement.classList.add('hide');
+            deliveryElement.classList.add("show");
+        } else {
+            onlineOrderElement.classList.add('show');
+            deliveryElement.classList.add("hide");
+        }
+    </script>
