@@ -5,10 +5,10 @@
     
         <div class="order">
             <div class="select-menu">
-                <img class ="select-img" src="images/badalgogi.jpg"  alt="Grilled pork" >
+                <img class="select-img" src="images/badalgogi.jpg"  alt="Grilled pork" >
                 <h3>Grilled Samgyupsal</h3>
                 <p class="price">$19.99</p>
-                <p><i class="fas fa-thumbs-up"></i>  Highly recommended menu. Pork, Griiled Samgyupsal with rice, vegi and soup! Simple and classic is always the best!</p>
+                <p><i class="fas fa-thumbs-up"></i> Recommended menu. Pork, Griiled Samgyupsal with rice, vegi and soup! Simple and classic is always the best!</p>
                 
                 <div class="select-qtt">
                     <input type ="number" value="1" min="1" max="20">
@@ -22,7 +22,7 @@
             </div>            
 
             <div class="select-menu">
-                <img class =" select-img" src="images/badalgogi2.jpg"  alt="spicy pork" >
+                <img class="select-img" src="images/badalgogi2.jpg"  alt="spicy pork" >
                 <h3>Jeyukbokum</h3>
                 <p class="price">$19.99</p>
                 <p>Fried gochujang souce marinated pork comes with rice, vegi and soup! Spicy food lover? Should try!</p>
@@ -121,7 +121,24 @@
                     <label>Total</label>
                     <div class="select-total-value" id="select-value"></div>
                 </div>        
-            </div>           
+            </div>       
+            
+            <div class="select-menu">
+                <img class="select-img" src="images/badalgogi.jpg"  alt="Grilled pork" >
+                <h3>Grilled Samgyupsal</h3>
+                <p class="price">$19.99</p>
+                <p><i class="fas fa-thumbs-up"></i> Recommended menu. Pork, Griiled Samgyupsal with rice, vegi and soup! Simple and classic is always the best!</p>
+                
+                <div class="select-qtt">
+                    <input type ="number" value="1" min="1" max="20">
+                    <button class ="select-add-btn" >Add</button>
+                    <button class="select-remove-btn">Remove</button>
+                </div>                    
+                <div class="select-total">
+                    <label>Total</label>
+                    <div class="select-total-value" id="select-value"></div>
+                </div>        
+            </div>            
 
         </div>
 

@@ -2,8 +2,9 @@
 <section class="contact-page">
         
         <div class="contact-container">
+
+        <!--
             <div class="form-wrapper">
-                <h2 class="headline">Tell us how we do!</h2>
                 <form action="">
                 <label for="fname">First Name</label>
                 <input type="text" id="fname" name="firstname" placeholder="Your name..">
@@ -20,7 +21,20 @@
                 <input type="submit" value="submit" class="form-btn">
                 </form>
             </div>
-            
+-->
+            <?php
+         
+          include 'includes/contact_include.php'; #site keys & code here
+      
+          $toAddress = "jiaelee1010@gmail.com";  //place your/your client's email address here
+          $toName = "Jiuen Lee"; //place your client's name here
+          $website = "Dondduk";  //place NAME of your client's website
+
+          echo loadContact('simple.php');#demonstrates a simple contact form
+          
+
+            ?>
+
             <div class="info-wrapper">                
                 <div class="contact-info">
                     <div class="hours">
